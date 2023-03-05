@@ -37,6 +37,10 @@
          @media screen and (max-width: 800px) {
             border-right: none;
          }
+
+         @media screen and (max-width: 730px) {
+            border-bottom: none;
+         }
       }
 
       span {
