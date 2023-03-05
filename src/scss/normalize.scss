@@ -91,6 +91,7 @@ pre {
 
 a {
    background-color: transparent;
+   text-decoration: none;
 }
 
 /**
@@ -176,7 +177,16 @@ img {
 /**
   * 1. Change the font styles in all browsers.
   * 2. Remove the margin in Firefox and Safari.
-  */
+  */ß
+
+ul {
+   margin: 0;
+}
+
+li {
+   list-style: none;
+}
+
 
 button,
 input,

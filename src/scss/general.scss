@@ -5,3 +5,47 @@
    padding: 0;
    box-sizing: border-box;
 }
+
+$accent: #95E1D3;
+$accent-extra: #F38281;
+$dark: #2D3033;
+$white: #FFFFFF;
+$black: #000000;
+$gray: #C6CBCD;
+
+$font-size: 18px;
+// $lineheight: 160%;
+$font-size-title: 24px;
+
+
+
+
+body {
+   background: #E5E5E5;
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+   font-size: $font-size;
+   // line-height: $lineheight;
+}
+
+// body.no-scroll {
+//    overflow: hidden;
+// }
+
+.container {
+   max-width: 1202px;
+   margin: 0 auto;
+   padding: 0 16px;
+}
+
+@mixin flex-center {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+@mixin flex-sb {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
