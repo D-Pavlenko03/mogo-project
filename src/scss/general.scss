@@ -55,6 +55,10 @@ body {
    display: block;
    width: 170px;
    height: 4px;
+}
+
+.divider__light {
+   background: $white;
 
    @media screen and (max-width: 1024px) {
       width: 115px;
@@ -65,12 +69,16 @@ body {
    }
 }
 
-.divider__light {
-   background: $white;
-}
-
 .divider__accent {
    background: $accent-extra;
+
+   @media screen and (max-width: 1024px) {
+      width: 148px;
+   }
+
+   @media screen and (max-width: 450px) {
+      width: 134px;
+   }
 }
 
 .button button {
@@ -106,5 +114,77 @@ body {
    &:active {
       border: 4px solid #E4BE8D;
    }
+}
 
+.section {
+   padding-top: 58px;
+
+   @media screen and (max-width: 1024px) {
+      padding-top: 45px;
+   }
+
+   &__subtitle h3 {
+      font-family: 'Kaushan Script', cursive;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 44px;
+      text-align: center;
+      color: $dark;
+   
+      @media screen and (max-width: 1024px) {
+         font-size: 24px;
+         line-height: 35px;
+      }
+
+      @media screen and (max-width: 450px) {
+         font-size: 24px;
+         line-height: 35px;
+      }
+   }
+
+   &__title  {
+      padding: 39px 0;
+
+      @media screen and (max-width: 1024px) {
+         padding: 36px 0;
+      }
+   }
+
+   &__title h2 {
+      font-weight: 900;
+      font-size: 36px;
+      line-height: 42px;
+      text-align: center;
+      text-transform: uppercase;
+      color: $dark;
+
+      @media screen and (max-width: 1024px) {
+         font-size: 24px;
+         line-height: 28px;
+      }
+   }
+
+   &__description {
+      padding: 38px 0 96px;
+
+      @media screen and (max-width: 1024px) {
+         padding: 33px 0 83px;
+      }
+
+      @media screen and (max-width: 500px) {
+         padding: 18px 0 33px;
+      }
+   }
+
+   &__description p {
+      font-weight: 400;
+      line-height: 21px;
+      text-align: center;
+      color: $black;
+
+      @media screen and (max-width: 1024px) {
+         font-size: 14px;
+         line-height: 16px;
+      }
+   }
 }
