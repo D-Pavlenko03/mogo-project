@@ -49,3 +49,62 @@ body {
    justify-content: space-between;
    align-items: center;
 }
+
+.divider {
+   margin: 0 auto;
+   display: block;
+   width: 170px;
+   height: 4px;
+
+   @media screen and (max-width: 1024px) {
+      width: 115px;
+   }
+
+   @media screen and (max-width: 450px) {
+      width: 134px;
+   }
+}
+
+.divider__light {
+   background: $white;
+}
+
+.divider__accent {
+   background: $accent-extra;
+}
+
+.button button {
+   width: 370px;
+   height: 78px;
+   background: transparent;
+   border: 4px solid $white;
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 28px;
+   text-align: center;
+   text-transform: uppercase;
+   color: $white;
+   cursor: pointer;
+   transition: all .3s ease-in-out;
+
+   @media screen and (max-width: 1024px) {
+      width: 318px;
+      height: 54px;
+      font-size: 18px;
+      line-height: 21px;
+   }
+
+   @media screen and (max-width: 450px) {
+      width: 285px;
+   }
+
+   &:hover {
+      background: $white;
+      color: #E4BE8D;
+   }
+
+   &:active {
+      border: 4px solid #E4BE8D;
+   }
+
+}

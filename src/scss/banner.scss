@@ -1,0 +1,176 @@
+.banner {
+   position: relative;
+
+   &::before {
+      content: '';
+      position: absolute;
+      background-image: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%), url('@img/banner/banner.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: calc(100% + 115.7px);
+      z-index: -1;
+      top: -115.7px;
+   }
+
+   &__wrapper {
+      padding-top: 55px;
+
+      @media screen and (max-width: 1024px) {
+         padding-top: 31px;
+      }
+   }
+
+   &__subtitle h2 {
+      font-family: 'Kaushan Script', cursive;
+      font-weight: 400;
+      font-size: 64px;
+      line-height: 93px;
+      text-align: center;
+      color: $white;
+      text-shadow: 
+		-0   -1px 0   #000000,
+		 0   -1px 0   #000000,
+		-0    1px 0   #000000,
+		 0    1px 0   #000000,
+		-1px -0   0   #000000,
+		 1px -0   0   #000000,
+		-1px  0   0   #000000,
+		 1px  0   0   #000000,
+		-1px -1px 0   #000000,
+		 1px -1px 0   #000000,
+		-1px  1px 0   #000000,
+		 1px  1px 0   #000000,
+		-1px -1px 0   #000000,
+		 1px -1px 0   #000000,
+		-1px  1px 0   #000000,
+		 1px  1px 0   #000000;
+
+      @media screen and (max-width: 1024px) {
+         font-size: 48px;
+         line-height: 70px;
+         text-shadow: none;
+         padding-bottom: 7px;
+      }
+
+      @media screen and (max-width: 450px) {
+         font-size: 36px;
+         line-height: 52px;
+      }
+   }
+
+   &__title h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 144px;
+      line-height: 176px;
+      text-align: center;
+      text-transform: uppercase;
+      color: $white;
+      max-width: 1055px;
+      margin: 0 auto 50px;
+
+      @media screen and (max-width: 1024px) {
+         font-size: 96px;
+         line-height: 117px;
+         max-width: 700px;
+         margin: 0 auto 30px;
+      }
+
+      @media screen and (max-width: 700px) {
+         margin: 44px auto 58px;
+         font-size: 66px;
+         line-height: 76px;
+         max-width: 350px;
+      }
+
+      @media screen and (max-width: 450px) {
+         font-size: 48px;
+         line-height: 59px;
+      }
+   }
+
+   &__button {
+      @include flex-center;
+      margin: 74px 0 101px;
+
+      @media screen and (max-width: 1024px) {
+         margin: 49px 0 62px;
+      }
+
+      @media screen and (max-width: 450px) {
+         margin: 49px 0 38px;
+      }
+   }
+
+   &__navigation {
+      @include flex-sb;
+   }
+
+   &__navigation-box {
+      max-width: 270px;
+      width: 100%;
+
+      &:not(:last-child) {
+         margin-right: 10px;
+      }
+
+      @media screen and (max-width: 1024px) {
+         max-width: 233px;
+      }
+
+      @media screen and (max-width: 450px) {
+         max-width: 57px;
+         padding-bottom: 37px;
+      }
+   }
+
+   &__navigation-line span {
+      display: inline-block;
+      width: 100%;
+      height: 4px;
+      background: $white;
+   }
+   
+   &__navigation-items {
+      display: flex;
+      align-items: end;
+      padding: 20px 0;
+
+      @media screen and (max-width: 1024px) {
+         padding: 12px 0;
+      }
+
+      @media screen and (max-width: 450px) {
+         display: none;
+      }
+   }
+
+   &__navigation-items span {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 42px;
+      text-transform: uppercase;
+      color: $white;
+      margin-right: 5px;
+
+      @media screen and (max-width: 1024px) {
+         font-size: 24px;
+         line-height: 28px;
+      }
+   }
+
+   &__navigation-items p {
+      font-weight: 500;
+      line-height: 21px;
+      text-transform: uppercase;
+      color: $white;
+      padding-bottom: 5px;
+
+      @media screen and (max-width: 1024px) {
+         font-size: 14px;
+         line-height: 16px;
+      }
+   }
+}
