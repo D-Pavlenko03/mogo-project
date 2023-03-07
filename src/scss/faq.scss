@@ -1,0 +1,44 @@
+.faq {
+   @media screen and (max-width: 1200px) {
+      padding-top: 59px;
+   }
+
+   @media screen and (max-width: 500px) {
+      padding-top: 24px;
+   }
+
+   &__content {
+      @include flex-sb;
+      padding: 0 0 88px;
+      margin-top: -15px;
+
+      @media screen and (max-width: 900px) {
+         flex-direction: column;
+         padding: 0 0 31px;
+      }
+   }
+
+   &__img-content {
+      margin-right: 30px;
+      max-width: 570px;
+      width: 100%;
+
+      @media screen and (max-width: 1200px) {
+         margin-right: 20px;
+      }
+
+      @media screen and (max-width: 900px) {
+         margin: 0 0 24px;
+      }
+
+      @media screen and (max-width: 500px) {
+         margin: 28px 0 24px;
+      }
+   }
+
+   &__img {
+      img {
+         width: 100%;
+      }
+   }
+}
