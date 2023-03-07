@@ -29,28 +29,10 @@
       line-height: 93px;
       text-align: center;
       color: $white;
-      text-shadow: 
-		-0   -1px 0   #000000,
-		 0   -1px 0   #000000,
-		-0    1px 0   #000000,
-		 0    1px 0   #000000,
-		-1px -0   0   #000000,
-		 1px -0   0   #000000,
-		-1px  0   0   #000000,
-		 1px  0   0   #000000,
-		-1px -1px 0   #000000,
-		 1px -1px 0   #000000,
-		-1px  1px 0   #000000,
-		 1px  1px 0   #000000,
-		-1px -1px 0   #000000,
-		 1px -1px 0   #000000,
-		-1px  1px 0   #000000,
-		 1px  1px 0   #000000;
 
       @media screen and (max-width: 1024px) {
          font-size: 48px;
          line-height: 70px;
-         text-shadow: none;
          padding-bottom: 7px;
       }
 
