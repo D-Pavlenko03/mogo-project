@@ -1,0 +1,65 @@
+.devices {
+   background-image: linear-gradient(360deg, rgba(255, 255, 255, .8) 0%, rgba(255, 255, 255, .8) 100%), url(../img/devices/devices-bg.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: 0 0;
+   margin-top: 28px;
+
+   &__content {
+      padding: 59px 0 52px;
+
+      @media screen and (max-width: 1024px) {
+         padding: 54px 0 37px;
+      }
+
+      @media screen and (max-width: 500px) {
+         padding: 132px 0 20px;
+      }
+   }
+
+   &__img {
+      max-width: 700px;
+      margin: 0 auto;
+      position: relative;
+
+      @media screen and (max-width: 1024px) {
+         max-width: 470px;
+      }
+
+      img {
+         width: 100%;
+      }
+
+      &::after {
+         content: '';
+         position: absolute;
+         background-image: url(../img/devices/devices-mobile.png);
+         bottom: -94px;
+         right: -36px;
+         width: 200px;
+         height: 412px;
+         background-size: cover;
+
+         @media screen and (max-width: 1024px) {
+            bottom: -66px;
+            right: -26px;
+            width: 135px;
+            height: 280px;
+         }
+
+         @media screen and (max-width: 600px) {
+            bottom: -67px;
+            right: 39px;
+            width: 115px;
+            height: 236px;
+         }
+
+         @media screen and (max-width: 450px) {
+            bottom: -49px;
+            right: 28px;
+            width: 85px;
+            height: 175px;
+         }
+      }
+   }
+}

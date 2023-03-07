@@ -1,0 +1,122 @@
+.about {
+   &__content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 30px;
+      padding-bottom: 104px;
+
+      @media screen and (max-width: 1024px) {
+         grid-gap: 20px;
+         padding-bottom: 46px;
+      }
+
+      @media screen and (max-width: 900px) {
+         grid-gap: 10px;
+      }
+
+      @media screen and (max-width: 500px) {
+         grid-template-columns: repeat(1, 1fr);
+         padding-bottom: 40px;
+      }
+   }
+
+   &__item {
+      position: relative;
+   }
+
+   &__image {
+      width: 100%;
+      object-fit: cover;
+
+      @media screen and (max-width: 500px) {
+         height: 258px;
+         height: 100%;
+      }
+   }
+
+   &__item:hover .about__info {
+      opacity: 1;
+      transform: translate(-16px, -16px);
+
+      @media screen and (max-width: 1024px) {
+         transform: translate(-6px, -7px);
+      }
+
+      @media screen and (max-width: 500px) {
+         transform: translate(0, 0);
+      }
+   }
+
+   &__item:hover .about__background {
+      opacity: 1;
+   }
+
+   &__info img {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+      margin-bottom: 30px;
+
+      @media screen and (max-width: 500px) {
+         width: 30.5px;
+         height: 30.5px;
+         margin: 0 32.5px 0 4px ;
+      }
+   }
+
+   &__info span {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+      text-transform: uppercase;
+      color: $white;
+
+      @media screen and (max-width: 500px) {
+         font-size: 18px;
+         line-height: 21px;
+      }
+   }
+
+   &__info {
+      position: absolute;
+      top: 0;
+      transform: translate(0, 0);
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: all 0.4s ease-in;
+      z-index: 2;
+
+      @media screen and (max-width: 500px) {
+         flex-direction: row;
+         justify-content: flex-start;
+         align-items: center;
+         opacity: 1;
+         height: 83px;
+         top: auto;
+         bottom: 0;
+      }
+   }
+
+   &__background {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: $accent;
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+
+      @media screen and (max-width: 500px) {
+         display: none;
+      }
+   }
+}

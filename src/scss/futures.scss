@@ -1,0 +1,73 @@
+.futures {
+   background-color: $accent;
+
+   &__wrapper {
+      @include flex-center;
+
+      @media screen and (max-width: 800px) {
+         flex-wrap: wrap;
+      }
+   }
+
+   &__box {
+      @include flex-center;
+      flex-direction: column;
+      border-left: 1px solid $white;
+      max-width: 233px;
+      width: 100%;
+      min-height: 252px;
+
+      @media screen and (max-width: 1024px) {
+         min-height: 166.5px;
+      }
+
+      @media screen and (max-width: 800px) {
+         border-left: none;
+         border-bottom: 1px solid $white;
+      }
+
+      @media screen and (max-width: 500px) {
+         min-height: 124px;
+         max-width: 144px;
+      }
+
+      &:last-child {
+         border-right: 1px solid $white;
+
+         @media screen and (max-width: 800px) {
+            border-right: none;
+         }
+
+         @media screen and (max-width: 730px) {
+            border-bottom: none;
+         }
+      }
+
+      span {
+         font-weight: 700;
+         font-size: 64px;
+         line-height: 75px;
+         text-align: center;
+         color: $white;
+         margin-bottom: 20px;
+
+         @media screen and (max-width: 1024px) {
+            font-size: 48px;
+            line-height: 56px;
+         }
+      }
+
+      p {
+         font-weight: 500;
+         font-size: 24px;
+         line-height: 28px;
+         text-align: center;
+         color: $white;
+
+         @media screen and (max-width: 1024px) {
+            font-size: 18px;
+            line-height: 21px;
+         }
+      }
+   }
+}
