@@ -12,6 +12,8 @@ const body = document.body;
 const tabs = document.querySelectorAll(".tabs__nav-item");
 const contents = document.querySelectorAll(".tab__content");
 
+
+
 smoothLinks.forEach(smoothLink => {
    smoothLink.addEventListener("click", function (e) {
       e.preventDefault();
@@ -61,3 +63,18 @@ for (let i = 0; i < tabs.length; i++) {
       contents[i].classList.add("tab__content_active");
    });
 }
+
+const faqs = document.querySelectorAll(".accordion");
+
+faqs.forEach(accordion => {
+   accordion.addEventListener('click', () => {
+      if (accordion.classList.contains("active") && document.querySelectorAll(".accordion.active").length > 1) {
+         accordion.classList.remove('active')
+      } else {
+         faqs.forEach(otherAccordion => {
+            otherAccordion.classList.remove('active');
+         });
+         accordion.classList.add('active');
+      }
+   })
+})
