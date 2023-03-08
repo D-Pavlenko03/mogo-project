@@ -107,3 +107,29 @@ faqs.forEach(accordion => {
       }
    })
 })
+
+const swiper = new Swiper('.reviews-swiper', {
+   loop: true,
+   speed: 600,
+   spaceBetween: 5,
+
+   navigation: {
+      nextEl: '.reviews__button-next',
+      prevEl: '.reviews__button-prev',
+   },
+   
+   pagination: {
+      el: '.reviews__pagination',
+      clickable: true,
+   },
+
+   mousewheel: {
+      invert: false
+   },
+
+   keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+      pageUpDown: true,
+   },
+});

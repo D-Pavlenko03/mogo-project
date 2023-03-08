@@ -1,0 +1,205 @@
+.reviews {
+   background: #F8F8F8;
+
+   &__wrapper {
+      padding: 42px 0;
+      position: relative;
+
+      @media screen and (max-width: 1024px) {
+         padding: 28px 0;
+      }
+
+      @media screen and (max-width: 500px) {
+         padding: 29px 0;
+      }
+   }
+
+   &__slide {
+      display: flex !important;
+      justify-content: space-between;
+      padding: 0 101px;
+      cursor: grab;
+
+      @media screen and (max-width: 900px) {
+         padding: 0 70px;
+      }
+
+      @media screen and (max-width: 650px) {
+         padding: 0 30px;
+      }
+
+      @media screen and (max-width: 500px) {
+         padding: 0;
+      }
+   }
+
+   &__image {
+      margin-right: 30px;
+      max-width: 170px;
+
+      @media screen and (max-width: 1024px) {
+         max-width: 115px;
+         margin-right: 37.5px;
+      }
+
+      @media screen and (max-width: 500px) {
+         display: none;
+      }
+
+      &-wrapper {
+         @include flex-center;
+         border: 2px solid $accent;
+         width: 170px;
+         height: 170px;
+         margin-right: 30px;
+
+
+         @media screen and (max-width: 1024px) {
+            width: 115px;
+            height: 115px;
+         }
+
+         img {
+            @media screen and (max-width: 1024px) {
+               max-width: 68px;
+            }
+         }
+      }
+   }
+
+   &__content {
+      display: flex;
+      flex-direction: column;
+      max-width: 770px;
+      width: 100%;
+
+      @media screen and (max-width: 1024px) {
+         max-width: 655px;
+      }
+   }
+
+   &__text p {
+      font-style: italic;
+      font-size: 24px;
+      line-height: 28px;
+      color: #A9AFB1;
+      margin: 6px 0 30px;
+
+      @media screen and (max-width: 1024px) {
+         font-size: 18px;
+         line-height: 21px;
+         margin: 2px 0 14px;
+      }
+
+      @media screen and (max-width: 500px) {
+         font-size: 14px;
+         line-height: 16px;
+         margin: 5px 0 30px;
+      }
+   }
+
+   &__name {
+      display: flex;
+      align-items: center;
+
+      span {
+         display: block;
+         width: 70px;
+         height: 4px;
+         background: $accent-extra;
+         margin-right: 56px;
+
+         @media screen and (max-width: 1024px) {
+            width: 47.5px;
+            margin-right: 39px;
+         }
+
+         @media screen and (max-width: 500px) {
+            margin-right: 37.5px;
+         }
+      }
+
+      p {
+         font-family: 'Kaushan Script', cursive;
+         font-weight: 400;
+         font-size: 30px;
+         line-height: 44px;
+         color: $black;
+
+         @media screen and (max-width: 1024px) {
+            font-size: 24px;
+            line-height: 35px;
+         }
+
+         @media screen and (max-width: 500px) {
+            font-size: 18px;
+            line-height: 26px;
+         }
+      }
+   }
+
+   &__button-prev,
+   &__button-next {
+      position: absolute;
+      top: 117px;
+      cursor: pointer;
+      transition: .3s ease-in-out;
+      z-index: 10;
+
+      @media screen and (max-width: 1024px) {
+         top: 78px;
+      }
+
+      @media screen and (max-width: 650px) {
+         display: none;
+      }
+
+      img {
+         width: 42px;
+         height: 42px;
+
+         @media screen and (max-width: 1024px) {
+            width: 28.5px;
+            height: 28.5px;
+         }
+      }
+
+      &:hover {
+         transform: scale(1.2);
+      }
+   }
+
+   &__button-prev {
+      left: 12px;
+   }
+
+   &__button-next{
+      right: 12px;
+   }
+
+   &__pagination {
+      display: none;     
+
+      @media screen and (max-width: 650px) {
+         display: flex;
+         justify-content: center;
+         width: 100%;
+         padding-top: 30px;
+      }
+   }
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, 
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+   background: none;
+   border: 1px solid $black;
+   width: 9.49px;
+   height: 9.49px;
+   margin: 0 var(--swiper-pagination-bullet-horizontal-gap,0px);
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet-active, 
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet-active {
+   border: 1px solid $gray;
+   background: $gray;
+}
