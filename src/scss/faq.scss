@@ -9,8 +9,12 @@
 
    &__content {
       @include flex-sb;
-      padding: 0 0 88px;
+      padding: 0 0 110px;
       margin-top: -15px;
+
+      @media screen and (max-width: 1024px) {
+         padding: 0 0 84px;
+      }
 
       @media screen and (max-width: 900px) {
          flex-direction: column;
