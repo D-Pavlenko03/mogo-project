@@ -12,7 +12,10 @@ const body = document.body;
 const tabs = document.querySelectorAll(".tabs__nav-item");
 const contents = document.querySelectorAll(".tab__content");
 
+let valueDisplays = document.querySelectorAll('.num');
+let interval = 4000;
 
+const faqs = document.querySelectorAll(".accordion");
 
 smoothLinks.forEach(smoothLink => {
    smoothLink.addEventListener("click", function (e) {
@@ -64,7 +67,33 @@ for (let i = 0; i < tabs.length; i++) {
    });
 }
 
-const faqs = document.querySelectorAll(".accordion");
+valueDisplays.forEach((valueDisplay) => {
+   let startValue = 0;
+   let endValue = parseInt(valueDisplay.getAttribute("data-vat"));
+   let duration = Math.floor(interval / endValue);
+   let counter;
+
+   function startCounter() {
+      counter = setInterval(function () {
+         startValue += 1;
+         valueDisplay.textContent = startValue;
+         if (startValue == endValue) {
+            clearInterval(counter);
+         }
+      }, duration);
+   }
+
+   function checkVisibility() {
+      let rect = valueDisplay.getBoundingClientRect();
+      let isVisible = (rect.top >= 0 && rect.bottom <= window.innerHeight);
+      if (isVisible) {
+         startCounter();
+         window.removeEventListener('scroll', checkVisibility);
+      }
+   }
+
+   window.addEventListener('scroll', checkVisibility);
+});
 
 faqs.forEach(accordion => {
    accordion.addEventListener('click', () => {
