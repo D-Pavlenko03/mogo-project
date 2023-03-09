@@ -15,11 +15,11 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 30px;
-      padding-bottom: 104px;
+      padding-bottom: 78px;
 
       @media screen and (max-width: 1024px) {
          grid-gap: 20px;
-         padding-bottom: 46px;
+         padding-bottom: 54px;
       }
 
       @media screen and (max-width: 900px) {
@@ -29,7 +29,7 @@
       @media screen and (max-width: 650px) {
          grid-template-columns: repeat(1, 1fr);
          grid-gap: 32px;
-         padding-bottom: 40px;
+         padding-bottom: 62px;
          margin-top: 4px;
       }
    }
