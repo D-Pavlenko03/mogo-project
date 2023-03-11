@@ -108,7 +108,7 @@ faqs.forEach(accordion => {
    })
 })
 
-const swiper = new Swiper('.reviews-swiper', {
+const reviews = new Swiper('.reviews-swiper', {
    loop: true,
    speed: 600,
    spaceBetween: 5,
@@ -120,6 +120,32 @@ const swiper = new Swiper('.reviews-swiper', {
    
    pagination: {
       el: '.reviews__pagination',
+      clickable: true,
+   },
+
+   mousewheel: {
+      invert: false
+   },
+
+   keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+      pageUpDown: true,
+   },
+});
+
+const feedbacks = new Swiper('.feedbacks-swiper', {
+   loop: true,
+   speed: 600,
+   spaceBetween: 5,
+
+   navigation: {
+      nextEl: '.feedbacks__button-next',
+      prevEl: '.feedbacks__button-prev',
+   },
+   
+   pagination: {
+      el: '.feedbacks__pagination',
       clickable: true,
    },
 
