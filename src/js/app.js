@@ -24,7 +24,7 @@ smoothLinks.forEach(smoothLink => {
 
       document.querySelector(id).scrollIntoView({
          behavior: 'smooth',
-         block: 'start'
+         block: 'start',
       });
    });
 });
@@ -66,6 +66,14 @@ for (let i = 0; i < tabs.length; i++) {
       contents[i].classList.add("tab__content_active");
    });
 }
+
+document.addEventListener('click', (event) => {
+   const isClickInsideMobileNav = mobileNav.contains(event.target);
+   const isMobileNavActive = mobileNav.classList.contains('header__mobile-menu_active');
+   if (!isClickInsideMobileNav && isMobileNavActive) {
+      toggleMobileNav();
+   }
+});
 
 valueDisplays.forEach((valueDisplay) => {
    let startValue = 0;
@@ -117,7 +125,7 @@ const reviews = new Swiper('.reviews-swiper', {
       nextEl: '.reviews__button-next',
       prevEl: '.reviews__button-prev',
    },
-   
+
    pagination: {
       el: '.reviews__pagination',
       clickable: true,
@@ -143,7 +151,7 @@ const feedbacks = new Swiper('.feedbacks-swiper', {
       nextEl: '.feedbacks__button-next',
       prevEl: '.feedbacks__button-prev',
    },
-   
+
    pagination: {
       el: '.feedbacks__pagination',
       clickable: true,
