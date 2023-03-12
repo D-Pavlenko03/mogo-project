@@ -1,0 +1,63 @@
+.map {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 42px 0;
+   background-image: linear-gradient(360deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%), url(../img/map/map-bg.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: 0 0;
+
+   @media screen and (max-width: 1024px) {
+      padding: 28.5px 0;
+   }
+
+   @media screen and (max-width: 500px) {
+      padding: 42px 0;
+   }
+
+   &__img {
+      width: 42px;
+      height: 42px;
+      margin: 0 auto 21px;
+
+      @media screen and (max-width: 1024px) {
+         text-align: center;
+         margin: 0 auto 1px;
+
+         img {
+               width: 28.5px;
+               height: 28.5px;
+         }
+      }
+
+      @media screen and (max-width: 500px) {
+         margin: 0 auto 27px;
+
+         img {
+            width: 42px;
+            height: 42px;
+         }
+      }
+   }
+
+   &__title h2 {
+      font-weight: 900;
+      font-size: 36px;
+      line-height: 42px;
+      text-align: center;
+      text-transform: uppercase;
+      color: $accent-extra;
+      padding-bottom: 38px;
+
+      @media screen and (max-width: 1024px) {
+         font-size: 24px;
+         line-height: 28px;
+         padding-bottom: 25px;
+      }
+
+      @media screen and (max-width: 500px) {
+         padding-bottom: 45px;
+      }
+   }
+}
