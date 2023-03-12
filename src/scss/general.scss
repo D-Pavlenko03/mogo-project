@@ -16,7 +16,6 @@ $gray: #C6CBCD;
 $font-size: 18px;
 $font-size-title: 24px;
 
-
 body {
    background: $white;
 	font-family: 'Raleway', sans-serif;
@@ -24,10 +23,9 @@ body {
    font-size: $font-size;
 }
 
-// body.no-scroll {
-//    overflow: hidden;
-// }
-
+body.no-scroll {
+   overflow: hidden;
+}
 
 .container {
    max-width: 1202px;
