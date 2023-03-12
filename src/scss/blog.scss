@@ -1,0 +1,232 @@
+.blog {
+   &__wrapper {
+      padding-top: 27px;
+
+      @media screen and (max-width: 1024px) {
+         padding-top: 20px;
+      }
+
+      @media screen and (max-width: 650px) {
+         padding-top: 0;
+         margin-top: -10px;
+      }
+   }
+
+   &__content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 30px;
+      padding: 41px 0 78px;
+
+      @media screen and (max-width: 1024px) {
+         grid-gap: 20px;
+         padding: 35px 0 78px;
+      }
+
+      @media screen and (max-width: 900px) {
+         grid-gap: 15px;
+      }
+
+      @media screen and (max-width: 800px) {
+         grid-template-columns: repeat(1, 1fr);
+         grid-gap: 25px;
+      }
+   }
+
+
+   &__box {
+      position: relative;
+
+      @media screen and (max-width: 800px) {
+         max-width: 600px;
+         margin: 0 auto;
+      }
+   }
+
+   &__image {
+      img {
+         width: 100%;
+
+         @media screen and (max-width: 650px) {
+            min-height: 214px;
+         }
+      }
+   }
+
+   &__time {
+      @include flex-center;
+      flex-direction: column;
+      width: 80px;
+      height: 80px;
+      background: $accent;
+      position: absolute;
+      left: -14px;
+      top: 147px;
+
+      @media screen and (max-width: 1200px) {
+         width: 68px;
+         height: 68px;
+         left: -6px;
+         top: 127px;
+      }
+
+      @media screen and (max-width: 1000px) {
+         top: 110px;
+      }
+
+      @media screen and (max-width: 900px) {
+         top: 97px;
+      }
+
+      @media screen and (max-width: 650px) {
+         width: 68px;
+         height: 68px;
+         left: 0;
+         top: 127px;
+      }
+   }
+
+   &__num {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 30px;
+      text-align: center;
+      text-transform: uppercase;
+      color: $white;
+      margin-bottom: 7px;
+
+      @media screen and (max-width: 1200px) {
+         font-size: 24px;
+         line-height: 20px;
+         margin-bottom: 4px;
+      }
+   }
+
+   &__mon {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 30px;
+      text-align: center;
+      text-transform: uppercase;
+      color: $white;
+
+      @media screen and (max-width: 1200px) {
+         font-size: 14px;
+         line-height: 20px;
+      }
+   }
+
+   &__name {
+      display: flex;
+      flex-direction: column;
+
+      h4 {
+         font-weight: 700;
+         font-size: 24px;
+         line-height: 28px;
+         text-transform: uppercase;
+         color: $dark;
+         padding: 32px 0 3px;
+         cursor: pointer;
+
+         @media screen and (max-width: 1200px) {
+            font-size: 18px;
+            line-height: 21px;
+            padding: 26px 0 3px;
+         }
+
+         @media screen and (max-width: 900px) {
+            font-size: 15px;
+         }
+
+         @media screen and (max-width: 650px) {
+            font-size: 18px;
+            padding: 29px 0 3px;
+         }
+      }
+
+      p {
+         font-weight: 400;
+         font-size: 18px;
+         line-height: 21px;
+         color: $dark;
+         padding: 10px 0;
+
+         @media screen and (max-width: 1024px) {
+            font-size: 14px;
+            line-height: 16px;
+            padding: 23px 0 16px;
+         }
+
+         @media screen and (max-width: 900px) {
+            font-size: 13px;
+         }
+
+         @media screen and (max-width: 650px) {
+            padding: 14px 0 16px;
+         }
+      }
+   }
+
+   &__feedbacks {
+      display: flex;
+      padding-top: 21px;
+
+      @media screen and (max-width: 650px) {
+         padding-top: 33px;
+      }
+
+      span {
+         font-size: 13px;
+         line-height: 15px;
+         color: $dark;
+         padding-bottom: 7px;
+
+         @media screen and (max-width: 1024px) {
+            font-size: 12px;
+            line-height: 14px;
+         }
+      }
+   }
+
+   &__views,
+   &__reviews {
+      display: flex;
+      align-items: center;
+
+      @media screen and (max-width: 650px) {
+         max-height: 28px;
+      }
+   }
+
+   &__reviews {
+      margin-left: 49px;
+
+      @media screen and (max-width: 1024px) {
+         margin-left: 37px;
+      }
+
+      @media screen and (max-width: 650px) {
+         margin-left: 45px;
+      }
+   }
+
+   &__views-img,
+   &__reviews-img {
+      margin-right: 16px;
+
+      @media screen and (max-width: 1024px) {
+         margin-right: 9px;
+      }
+
+      img {
+         width: 32px;
+         height: 32px;
+
+         @media screen and (max-width: 650px) {
+            width: 27px;
+            height: 27px;
+         }
+      }
+   }
+}
