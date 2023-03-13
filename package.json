@@ -9,7 +9,7 @@
 		"dev": "gulp",
 		"build": "gulp build --build",
 		"zip": "gulp deployZIP --build",
-		"deploy": "gh-pages -d dist", 
+		"deploy": "gh-pages -d dist",
 		"prod": "gulp --prod",
 		"svgSprive": "gulp svgSpriteTask"
 	},
