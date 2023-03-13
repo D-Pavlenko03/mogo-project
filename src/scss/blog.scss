@@ -20,7 +20,7 @@
 
       @media screen and (max-width: 1024px) {
          grid-gap: 20px;
-         padding: 35px 0 78px;
+         padding: 35px 0 51px;
       }
 
       @media screen and (max-width: 900px) {
@@ -30,6 +30,7 @@
       @media screen and (max-width: 800px) {
          grid-template-columns: repeat(1, 1fr);
          grid-gap: 25px;
+         padding: 35px 0 25px;
       }
    }
 
