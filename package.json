@@ -1,5 +1,6 @@
 {
-	"name": "gulp-2023",
+	"homepage": "http://D-Pavlenko03.github.io/mogo-project",
+	"name": "MoGo",
 	"version": "1.0.0",
 	"description": "",
 	"main": "gulpfile.js",
@@ -8,8 +9,9 @@
 		"dev": "gulp",
 		"build": "gulp build --build",
 		"zip": "gulp deployZIP --build",
-		"deploy": "gulp deployFTP --build",
-		"svgSprive": "gulp svgSpriteTask"
+		"svgSprive": "gulp svgSpriteTask",
+		"deploy": "gh-pages -d dist",
+		"prod": "gulp --prod"
 	},
 	"author": "",
 	"license": "ISC",
@@ -19,6 +21,7 @@
 	"devDependencies": {
 		"browser-sync": "latest",
 		"del": "latest",
+		"gh-pages": "^5.0.0",
 		"gulp": "latest",
 		"gulp-autoprefixer": "latest",
 		"gulp-clean-css": "latest",
