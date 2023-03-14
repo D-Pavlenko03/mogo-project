@@ -128,6 +128,7 @@
          color: $dark;
          padding: 32px 0 3px;
          cursor: pointer;
+         transition: all .3s ease-in-out;
 
          @media screen and (max-width: 1200px) {
             font-size: 18px;
@@ -142,6 +143,10 @@
          @media screen and (max-width: 650px) {
             font-size: 18px;
             padding: 29px 0 3px;
+         }
+
+         &:hover {
+            color: $accent;
          }
       }
 

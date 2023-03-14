@@ -5,8 +5,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/x-icon" href="img/favicon.png">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230313193140">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230313193140"/>
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 	<title>MoGo</title>
 </head>
 
@@ -108,7 +108,9 @@
 						<div class="banner__navigation">
 							<div class="banner__navigation-box">
 								<div class="banner__navigation-line">
-									<span></span>
+									<div class="banner__progress">
+										<span id="scroll-progress"></span>
+									</div>
 								</div>
 								<div class="banner__navigation-items">
 									<span>01</span>
@@ -117,25 +119,31 @@
 							</div>
 							<div class="banner__navigation-box">
 								<div class="banner__navigation-line">
-									<span></span>
+									<div class="banner__progress">
+										<span></span>
+									</div>
 								</div>
 								<div class="banner__navigation-items">
 									<span>02</span>
-									<p>works</p>
-								</div>
-							</div>
-							<div class="banner__navigation-box">
-								<div class="banner__navigation-line">
-									<span></span>
-								</div>
-								<div class="banner__navigation-items">
-									<span>03</span>
 									<p>about</p>
 								</div>
 							</div>
 							<div class="banner__navigation-box">
 								<div class="banner__navigation-line">
-									<span></span>
+									<div class="banner__progress">
+										<span></span>
+									</div>
+								</div>
+								<div class="banner__navigation-items">
+									<span>03</span>
+									<p>works</p>
+								</div>
+							</div>
+							<div class="banner__navigation-box">
+								<div class="banner__navigation-line">
+									<div class="banner__progress">
+										<span></span>
+									</div>
 								</div>
 								<div class="banner__navigation-items">
 									<span>04</span>
@@ -168,7 +176,7 @@
 						</div>
 						<div class="about__content">
 							<a href="#" class="about__item">
-								<picture><source srcset="img/about/about1.webp" type="image/webp"><img class="about__image" src="img/about/about1.jpg" alt="about"></picture>
+								<img class="about__image" src="img/about/about1.jpg" alt="about">
 								<div class="about__info">
 									<img src="img/about/about-icon.svg" alt="TEAM">
 									<span class="collection__info-text">
@@ -178,7 +186,7 @@
 								<div class="about__background"></div>
 							</a>
 							<a href="#" class="about__item">
-								<picture><source srcset="img/about/about2.webp" type="image/webp"><img class="about__image" src="img/about/about2.jpg" alt="about"></picture>
+								<img class="about__image" src="img/about/about2.jpg" alt="about">
 								<div class="about__info">
 									<img src="img/about/about-icon.svg" alt="TEAM">
 									<span class="collection__info-text">
@@ -188,7 +196,7 @@
 								<div class="about__background"></div>
 							</a>
 							<a href="#" class="about__item">
-								<picture><source srcset="img/about/about3.webp" type="image/webp"><img class="about__image" src="img/about/about3.jpg" alt="about"></picture>
+								<img class="about__image" src="img/about/about3.jpg" alt="about">
 								<div class="about__info">
 									<img src="img/about/about-icon.svg" alt="TEAM">
 									<span class="collection__info-text">
@@ -245,7 +253,7 @@
 							<div class="services__box">
 								<div class="services__img-wrapper">
 									<div class="services__img">
-										<picture><source srcset="img/services/photography.webp" type="image/webp"><img src="img/services/photography.png" alt="Photograph"></picture>
+										<img src="img/services/photography.png" alt="Photograph">
 									</div>
 								</div>
 								<div class="services__description">
@@ -262,7 +270,7 @@
 							<div class="services__box">
 								<div class="services__img-wrapper">
 									<div class="services__img">
-										<picture><source srcset="img/services/design.webp" type="image/webp"><img src="img/services/design.png" alt="Web Design"></picture>
+										<img src="img/services/design.png" alt="Web Design">
 									</div>
 								</div>
 								<div class="services__description">
@@ -279,7 +287,7 @@
 							<div class="services__box">
 								<div class="services__img-wrapper">
 									<div class="services__img">
-										<picture><source srcset="img/services/creativity.webp" type="image/webp"><img src="img/services/creativity.png" alt="Creativity"></picture>
+										<img src="img/services/creativity.png" alt="Creativity">
 									</div>
 								</div>
 								<div class="services__description">
@@ -296,7 +304,7 @@
 							<div class="services__box">
 								<div class="services__img-wrapper">
 									<div class="services__img">
-										<picture><source srcset="img/services/seo.webp" type="image/webp"><img src="img/services/seo.png" alt="SEO"></picture>
+										<img src="img/services/seo.png" alt="SEO">
 									</div>
 								</div>
 								<div class="services__description">
@@ -313,7 +321,7 @@
 							<div class="services__box">
 								<div class="services__img-wrapper">
 									<div class="services__img">
-										<picture><source srcset="img/services/html.webp" type="image/webp"><img src="img/services/html.png" alt="css/html"></picture>
+										<img src="img/services/html.png" alt="css/html">
 									</div>
 								</div>
 								<div class="services__description">
@@ -330,7 +338,7 @@
 							<div class="services__box">
 								<div class="services__img-wrapper">
 									<div class="services__img">
-										<picture><source srcset="img/services/digital.webp" type="image/webp"><img src="img/services/digital.png" alt="digital"></picture>
+										<img src="img/services/digital.png" alt="digital">
 									</div>
 								</div>
 								<div class="services__description">
@@ -363,7 +371,7 @@
 						</div>
 						<div class="devices__content">
 							<div class="devices__img">
-								<picture><source srcset="img/devices/devices-tablet.webp" type="image/webp"><img src="img/devices/devices-tablet.png" alt="Unique Design"></picture>
+								<img src="img/devices/devices-tablet.png" alt="Unique Design">
 							</div>
 						</div>
 					</div>
@@ -401,7 +409,7 @@
 								<div class="accordion active">
 									<div class="accordion__header">
 										<div class="accordion__img">
-											<picture><source srcset="img/faq/faq-photography.webp" type="image/webp"><img src="img/faq/faq-photography.png" alt="Photography"></picture>
+											<img src="img/faq/faq-photography.png" alt="Photography">
 										</div>
 										<span>photography</span>
 									</div>
@@ -425,7 +433,7 @@
 								<div class="accordion">
 									<div class="accordion__header">
 										<div class="accordion__img">
-											<picture><source srcset="img/faq/faq-creativity.webp" type="image/webp"><img src="img/faq/faq-creativity.png" alt="Сreativityy"></picture>
+											<img src="img/faq/faq-creativity.png" alt="Сreativityy">
 										</div>
 										<span>creativity</span>
 									</div>
@@ -449,7 +457,7 @@
 								<div class="accordion">
 									<div class="accordion__header">
 										<div class="accordion__img">
-											<picture><source srcset="img/faq/faq-design.webp" type="image/webp"><img src="img/faq/faq-design.png" alt="Web Wesign"></picture>
+											<img src="img/faq/faq-design.png" alt="Web Wesign">
 										</div>
 										<span>web design</span>
 									</div>
@@ -484,7 +492,7 @@
 								<div class="reviews__slide swiper-slide">
 									<div class="reviews__image">
 										<div class="reviews__image-wrapper">
-											<picture><source srcset="img/reviews/reviews-icons.webp" type="image/webp"><img src="img/reviews/reviews-icons.png" alt="Review"></picture>
+											<img src="img/reviews/reviews-icons.png" alt="Review">
 										</div>
 									</div>
 									<div class="reviews__content">
@@ -504,7 +512,7 @@
 								<div class="reviews__slide swiper-slide">
 									<div class="reviews__image">
 										<div class="reviews__image-wrapper">
-											<picture><source srcset="img/reviews/reviews-icons.webp" type="image/webp"><img src="img/reviews/reviews-icons.png" alt="Review"></picture>
+											<img src="img/reviews/reviews-icons.png" alt="Review">
 										</div>
 									</div>
 									<div class="reviews__content">
@@ -524,7 +532,7 @@
 								<div class="reviews__slide swiper-slide">
 									<div class="reviews__image">
 										<div class="reviews__image-wrapper">
-											<picture><source srcset="img/reviews/reviews-icons.webp" type="image/webp"><img src="img/reviews/reviews-icons.png" alt="Review"></picture>
+											<img src="img/reviews/reviews-icons.png" alt="Review">
 										</div>
 									</div>
 									<div class="reviews__content">
@@ -544,7 +552,7 @@
 								<div class="reviews__slide swiper-slide">
 									<div class="reviews__image">
 										<div class="reviews__image-wrapper">
-											<picture><source srcset="img/reviews/reviews-icons.webp" type="image/webp"><img src="img/reviews/reviews-icons.png" alt="Review"></picture>
+											<img src="img/reviews/reviews-icons.png" alt="Review">
 										</div>
 									</div>
 									<div class="reviews__content">
@@ -564,7 +572,7 @@
 								<div class="reviews__slide swiper-slide">
 									<div class="reviews__image">
 										<div class="reviews__image-wrapper">
-											<picture><source srcset="img/reviews/reviews-icons.webp" type="image/webp"><img src="img/reviews/reviews-icons.png" alt="Review"></picture>
+											<img src="img/reviews/reviews-icons.png" alt="Review">
 										</div>
 									</div>
 									<div class="reviews__content">
@@ -585,10 +593,10 @@
 						</div>
 
 						<div class="reviews__button-prev">
-							<picture><source srcset="img/reviews/arrow_prew.webp" type="image/webp"><img src="img/reviews/arrow_prew.png" alt="Previous Slide"></picture>
+							<img src="img/reviews/arrow_prew.png" alt="Previous Slide">
 						</div>
 						<div class="reviews__button-next">
-							<picture><source srcset="img/reviews/arrow_next.webp" type="image/webp"><img src="img/reviews/arrow_next.png" alt="Next Slide"></picture>
+							<img src="img/reviews/arrow_next.png" alt="Next Slide">
 						</div>
 
 						<div class="reviews__pagination"></div>
@@ -615,12 +623,10 @@
 								</p>
 							</div>
 						</div>
-
 						<div class="team__content">
 							<div class="team__box">
 								<div class="team__item">
-									<picture><source srcset="img/team/team-1.webp" type="image/webp"><img class="team__image" src="img/team/team-1.jpg" alt="about"></picture>
-
+									<img class="team__image" src="img/team/team-1.jpg" alt="about">
 									<div class="team__info">
 										<div class="team__links">
 											<a href="#" target="_blank">
@@ -630,7 +636,6 @@
 														d="M10.6138 31.495V17.152H15.4525L16.1718 11.5363H10.6138V7.9593C10.6138 6.3388 11.0653 5.2293 13.391 5.2293H16.338V0.222546C14.9041 0.0688804 13.4628 -0.00531653 12.0208 0.000296041C7.74375 0.000296041 4.80725 2.6113 4.80725 7.40455V11.5258H0V17.1415H4.81775V31.495H10.6138Z" />
 												</svg>
 											</a>
-
 											<a href="#" target="_blank">
 												<svg width="38" height="30" viewBox="0 0 38 30" fill="#F38281"
 													xmlns="http://www.w3.org/2000/svg">
@@ -655,7 +660,6 @@
 										</div>
 									</div>
 								</div>
-
 								<div class="team__name">
 									<h4>Kadin Dias</h4>
 									<span>founder, ceo</span>
@@ -663,8 +667,7 @@
 							</div>
 							<div class="team__box">
 								<div class="team__item">
-									<picture><source srcset="img/team/team-2.webp" type="image/webp"><img class="team__image" src="img/team/team-2.jpg" alt="about"></picture>
-
+									<img class="team__image" src="img/team/team-2.jpg" alt="about">
 									<div class="team__info">
 										<div class="team__links">
 											<a href="#" target="_blank">
@@ -674,7 +677,6 @@
 														d="M10.6138 31.495V17.152H15.4525L16.1718 11.5363H10.6138V7.9593C10.6138 6.3388 11.0653 5.2293 13.391 5.2293H16.338V0.222546C14.9041 0.0688804 13.4628 -0.00531653 12.0208 0.000296041C7.74375 0.000296041 4.80725 2.6113 4.80725 7.40455V11.5258H0V17.1415H4.81775V31.495H10.6138Z" />
 												</svg>
 											</a>
-
 											<a href="#" target="_blank">
 												<svg width="38" height="30" viewBox="0 0 38 30" fill="#F38281"
 													xmlns="http://www.w3.org/2000/svg">
@@ -699,17 +701,14 @@
 										</div>
 									</div>
 								</div>
-
 								<div class="team__name">
 									<h4>Zain Calzoni</h4>
 									<span>designer</span>
 								</div>
 							</div>
-
 							<div class="team__box">
 								<div class="team__item">
-									<picture><source srcset="img/team/team-3.webp" type="image/webp"><img class="team__image" src="img/team/team-3.jpg" alt="about"></picture>
-
+									<img class="team__image" src="img/team/team-3.jpg" alt="about">
 									<div class="team__info">
 										<div class="team__links">
 											<a href="#" target="_blank">
@@ -719,7 +718,6 @@
 														d="M10.6138 31.495V17.152H15.4525L16.1718 11.5363H10.6138V7.9593C10.6138 6.3388 11.0653 5.2293 13.391 5.2293H16.338V0.222546C14.9041 0.0688804 13.4628 -0.00531653 12.0208 0.000296041C7.74375 0.000296041 4.80725 2.6113 4.80725 7.40455V11.5258H0V17.1415H4.81775V31.495H10.6138Z" />
 												</svg>
 											</a>
-
 											<a href="#" target="_blank">
 												<svg width="38" height="30" viewBox="0 0 38 30" fill="#F38281"
 													xmlns="http://www.w3.org/2000/svg">
@@ -744,7 +742,6 @@
 										</div>
 									</div>
 								</div>
-
 								<div class="team__name">
 									<h4>Charlie George</h4>
 									<span>photographer</span>
@@ -759,22 +756,22 @@
 				<div class="container">
 					<div class="partners__wrapper">
 						<div class="partners__img">
-							<picture><source srcset="img/partners/partners-1.webp" type="image/webp"><img src="img/partners/partners-1.png" alt="Partner"></picture>
+							<img src="img/partners/partners-1.png" alt="Partner">
 						</div>
 						<div class="partners__img">
-							<picture><source srcset="img/partners/partners-2.webp" type="image/webp"><img src="img/partners/partners-2.png" alt="Partner"></picture>
+							<img src="img/partners/partners-2.png" alt="Partner">
 						</div>
 						<div class="partners__img">
-							<picture><source srcset="img/partners/partners-3.webp" type="image/webp"><img src="img/partners/partners-3.png" alt="Partner"></picture>
+							<img src="img/partners/partners-3.png" alt="Partner">
 						</div>
 						<div class="partners__img">
-							<picture><source srcset="img/partners/partners-4.webp" type="image/webp"><img src="img/partners/partners-4.png" alt="Partner"></picture>
+							<img src="img/partners/partners-4.png" alt="Partner">
 						</div>
 						<div class="partners__img">
-							<picture><source srcset="img/partners/partners-5.webp" type="image/webp"><img src="img/partners/partners-5.png" alt="Partner"></picture>
+							<img src="img/partners/partners-5.png" alt="Partner">
 						</div>
 						<div class="partners__img">
-							<picture><source srcset="img/partners/partners-6.webp" type="image/webp"><img src="img/partners/partners-6.png" alt="Partner"></picture>
+							<img src="img/partners/partners-6.png" alt="Partner">
 						</div>
 					</div>
 				</div>
@@ -803,9 +800,9 @@
 				</div>
 				<div class="work__content">
 					<a class="work__img-wrapper work__img-1" href="#" target="_blank">
-						<picture><source srcset="img/work/work-1.webp" type="image/webp"><img src="img/work/work-1.jpg" alt="Our Work"></picture>
+						<img src="img/work/work-1.jpg" alt="Our Work">
 						<div class="work__info">
-							<picture><source srcset="img/work/work-icon.webp" type="image/webp"><img src="img/work/work-icon.png" alt="Work Icon"></picture>
+							<img src="img/work/work-icon.png" alt="Work Icon">
 							<h4>creatively design</h4>
 							<span class="collection__info-text">
 								Super team
@@ -813,9 +810,9 @@
 						</div>
 					</a>
 					<a class="work__img-wrapper work__img-2" href="#" target="_blank">
-						<picture><source srcset="img/work/work-2.webp" type="image/webp"><img src="img/work/work-2.jpg" alt="Our Work"></picture>
+						<img src="img/work/work-2.jpg" alt="Our Work">
 						<div class="work__info">
-							<picture><source srcset="img/work/work-icon.webp" type="image/webp"><img src="img/work/work-icon.png" alt="Work Icon"></picture>
+							<img src="img/work/work-icon.png" alt="Work Icon">
 							<h4>creatively design</h4>
 							<span class="collection__info-text">
 								Super team
@@ -823,9 +820,9 @@
 						</div>
 					</a>
 					<a class="work__img-wrapper work__img-3" href="#" target="_blank">
-						<picture><source srcset="img/work/work-3.webp" type="image/webp"><img src="img/work/work-3.jpg" alt="Our Work"></picture>
+						<img src="img/work/work-3.jpg" alt="Our Work">
 						<div class="work__info">
-							<picture><source srcset="img/work/work-icon.webp" type="image/webp"><img src="img/work/work-icon.png" alt="Work Icon"></picture>
+							<img src="img/work/work-icon.png" alt="Work Icon">
 							<h4>creatively design</h4>
 							<span class="collection__info-text">
 								Super team
@@ -833,9 +830,9 @@
 						</div>
 					</a>
 					<a class="work__img-wrapper work__img-4" href="#" target="_blank">
-						<picture><source srcset="img/work/work-4.webp" type="image/webp"><img src="img/work/work-4.jpg" alt="Our Work"></picture>
+						<img src="img/work/work-4.jpg" alt="Our Work">
 						<div class="work__info">
-							<picture><source srcset="img/work/work-icon.webp" type="image/webp"><img src="img/work/work-icon.png" alt="Work Icon"></picture>
+							<img src="img/work/work-icon.png" alt="Work Icon">
 							<h4>creatively design</h4>
 							<span class="collection__info-text">
 								Super team
@@ -843,9 +840,9 @@
 						</div>
 					</a>
 					<a class="work__img-wrapper work__img-5" href="#" target="_blank">
-						<picture><source srcset="img/work/work-5.webp" type="image/webp"><img src="img/work/work-5.jpg" alt="Our Work"></picture>
+						<img src="img/work/work-5.jpg" alt="Our Work">
 						<div class="work__info">
-							<picture><source srcset="img/work/work-icon.webp" type="image/webp"><img src="img/work/work-icon.png" alt="Work Icon"></picture>
+							<img src="img/work/work-icon.png" alt="Work Icon">
 							<h4>creatively design</h4>
 							<span class="collection__info-text">
 								Super team
@@ -857,9 +854,8 @@
 							<source media="(max-width:650px)" srcset="img/work/work-tab-6.jpg">
 							<img src="img/work/work-6.jpg" alt="Our Work">
 						</picture>
-
 						<div class="work__info">
-							<picture><source srcset="img/work/work-icon.webp" type="image/webp"><img src="img/work/work-icon.png" alt="Work Icon"></picture>
+							<img src="img/work/work-icon.png" alt="Work Icon">
 							<h4>creatively design</h4>
 							<span class="collection__info-text">
 								Super team
@@ -867,9 +863,9 @@
 						</div>
 					</a>
 					<a class="work__img-wrapper work__img-7" href="#" target="_blank">
-						<picture><source srcset="img/work/work-7.webp" type="image/webp"><img src="img/work/work-7.jpg" alt="Our Work"></picture>
+						<img src="img/work/work-7.jpg" alt="Our Work">
 						<div class="work__info">
-							<picture><source srcset="img/work/work-icon.webp" type="image/webp"><img src="img/work/work-icon.png" alt="Work Icon"></picture>
+							<img src="img/work/work-icon.png" alt="Work Icon">
 							<h4>creatively design</h4>
 							<span class="collection__info-text">
 								Super team
@@ -887,7 +883,7 @@
 								<div class="feedbacks__slide swiper-slide">
 									<div class="feedbacks__image">
 										<div class="feedbacks__image-wrapper">
-											<picture><source srcset="img/feedbacks/feedback-1.webp" type="image/webp"><img src="img/feedbacks/feedback-1.png" alt="James Philips"></picture>
+											<img src="img/feedbacks/feedback-1.png" alt="James Philips">
 										</div>
 									</div>
 									<div class="feedbacks__content">
@@ -907,7 +903,7 @@
 								<div class="feedbacks__slide swiper-slide">
 									<div class="feedbacks__image">
 										<div class="feedbacks__image-wrapper">
-											<picture><source srcset="img/feedbacks/feedback-1.webp" type="image/webp"><img src="img/feedbacks/feedback-1.png" alt="James Philips"></picture>
+											<img src="img/feedbacks/feedback-1.png" alt="James Philips">
 										</div>
 									</div>
 									<div class="feedbacks__content">
@@ -927,7 +923,7 @@
 								<div class="feedbacks__slide swiper-slide">
 									<div class="feedbacks__image">
 										<div class="feedbacks__image-wrapper">
-											<picture><source srcset="img/feedbacks/feedback-1.webp" type="image/webp"><img src="img/feedbacks/feedback-1.png" alt="James Philips"></picture>
+											<img src="img/feedbacks/feedback-1.png" alt="James Philips">
 										</div>
 									</div>
 									<div class="feedbacks__content">
@@ -947,7 +943,7 @@
 								<div class="feedbacks__slide swiper-slide">
 									<div class="feedbacks__image">
 										<div class="feedbacks__image-wrapper">
-											<picture><source srcset="img/feedbacks/feedback-1.webp" type="image/webp"><img src="img/feedbacks/feedback-1.png" alt="James Philips"></picture>
+											<img src="img/feedbacks/feedback-1.png" alt="James Philips">
 										</div>
 									</div>
 									<div class="feedbacks__content">
@@ -967,7 +963,7 @@
 								<div class="feedbacks__slide swiper-slide">
 									<div class="feedbacks__image">
 										<div class="feedbacks__image-wrapper">
-											<picture><source srcset="img/feedbacks/feedback-1.webp" type="image/webp"><img src="img/feedbacks/feedback-1.png" alt="James Philips"></picture>
+											<img src="img/feedbacks/feedback-1.png" alt="James Philips">
 										</div>
 									</div>
 									<div class="feedbacks__content">
@@ -986,14 +982,12 @@
 								</div>
 							</div>
 						</div>
-
 						<div class="feedbacks__button-prev">
-							<picture><source srcset="img/reviews/arrow_prew.webp" type="image/webp"><img src="img/reviews/arrow_prew.png" alt="Previous Slide"></picture>
+							<img src="img/reviews/arrow_prew.png" alt="Previous Slide">
 						</div>
 						<div class="feedbacks__button-next">
-							<picture><source srcset="img/reviews/arrow_next.webp" type="image/webp"><img src="img/reviews/arrow_next.png" alt="Next Slide"></picture>
+							<img src="img/reviews/arrow_next.png" alt="Next Slide">
 						</div>
-
 						<div class="feedbacks__pagination"></div>
 					</div>
 				</div>
@@ -1011,12 +1005,11 @@
 							</div>
 							<span class="divider divider__accent"></span>
 						</div>
-
 						<div class="clients__content">
 							<div class="clients__box">
 								<div class="clients__photo">
 									<div class="clients__img">
-										<picture><source srcset="img/clients/client-1.webp" type="image/webp"><img src="img/clients/client-1.png" alt="Phillip Culhane"></picture>
+										<img src="img/clients/client-1.png" alt="Phillip Culhane">
 									</div>
 								</div>
 								<div class="clients__description">
@@ -1033,7 +1026,7 @@
 							<div class="clients__box">
 								<div class="clients__photo">
 									<div class="clients__img">
-										<picture><source srcset="img/clients/client-2.webp" type="image/webp"><img src="img/clients/client-2.png" alt="Paityn Press"></picture>
+										<img src="img/clients/client-2.png" alt="Paityn Press">
 									</div>
 								</div>
 								<div class="clients__description">
@@ -1050,7 +1043,7 @@
 							<div class="clients__box">
 								<div class="clients__photo">
 									<div class="clients__img">
-										<picture><source srcset="img/clients/client-3.webp" type="image/webp"><img src="img/clients/client-3.png" alt="Dulce Gouse"></picture>
+										<img src="img/clients/client-3.png" alt="Dulce Gouse">
 									</div>
 								</div>
 								<div class="clients__description">
@@ -1067,7 +1060,7 @@
 							<div class="clients__box">
 								<div class="clients__photo">
 									<div class="clients__img">
-										<picture><source srcset="img/clients/client-4.webp" type="image/webp"><img src="img/clients/client-4.png" alt="Zaire Schleifer"></picture>
+										<img src="img/clients/client-4.png" alt="Zaire Schleifer">
 									</div>
 								</div>
 								<div class="clients__description">
@@ -1101,7 +1094,7 @@
 						<div class="blog__content">
 							<div class="blog__box">
 								<div class="blog__image">
-									<picture><source srcset="img/blog/blog1.webp" type="image/webp"><img src="img/blog/blog1.jpg" alt="Blog"></picture>
+									<img src="img/blog/blog1.jpg" alt="Blog">
 								</div>
 								<time class="blog__time">
 									<span class="blog__num">15</span>
@@ -1120,13 +1113,13 @@
 								<div class="blog__feedbacks">
 									<div class="blog__views">
 										<div class="blog__views-img">
-											<picture><source srcset="img/blog/views.webp" type="image/webp"><img src="img/blog/views.png" alt="views"></picture>
+											<img src="img/blog/views.png" alt="views">
 										</div>
 										<span>542</span>
 									</div>
 									<div class="blog__reviews">
 										<div class="blog__reviews-img">
-											<picture><source srcset="img/blog/reviews.webp" type="image/webp"><img src="img/blog/reviews.png" alt="reviews"></picture>
+											<img src="img/blog/reviews.png" alt="reviews">
 										</div>
 										<span>17</span>
 									</div>
@@ -1134,7 +1127,7 @@
 							</div>
 							<div class="blog__box">
 								<div class="blog__image">
-									<picture><source srcset="img/blog/blog1.webp" type="image/webp"><img src="img/blog/blog1.jpg" alt="Blog"></picture>
+									<img src="img/blog/blog1.jpg" alt="Blog">
 								</div>
 								<time class="blog__time">
 									<span class="blog__num">15</span>
@@ -1153,13 +1146,13 @@
 								<div class="blog__feedbacks">
 									<div class="blog__views">
 										<div class="blog__views-img">
-											<picture><source srcset="img/blog/views.webp" type="image/webp"><img src="img/blog/views.png" alt="views"></picture>
+											<img src="img/blog/views.png" alt="views">
 										</div>
 										<span>542</span>
 									</div>
 									<div class="blog__reviews">
 										<div class="blog__reviews-img">
-											<picture><source srcset="img/blog/reviews.webp" type="image/webp"><img src="img/blog/reviews.png" alt="reviews"></picture>
+											<img src="img/blog/reviews.png" alt="reviews">
 										</div>
 										<span>17</span>
 									</div>
@@ -1167,7 +1160,7 @@
 							</div>
 							<div class="blog__box">
 								<div class="blog__image">
-									<picture><source srcset="img/blog/blog1.webp" type="image/webp"><img src="img/blog/blog1.jpg" alt="Blog"></picture>
+									<img src="img/blog/blog1.jpg" alt="Blog">
 								</div>
 								<time class="blog__time">
 									<span class="blog__num">15</span>
@@ -1186,13 +1179,13 @@
 								<div class="blog__feedbacks">
 									<div class="blog__views">
 										<div class="blog__views-img">
-											<picture><source srcset="img/blog/views.webp" type="image/webp"><img src="img/blog/views.png" alt="views"></picture>
+											<img src="img/blog/views.png" alt="views">
 										</div>
 										<span>542</span>
 									</div>
 									<div class="blog__reviews">
 										<div class="blog__reviews-img">
-											<picture><source srcset="img/blog/reviews.webp" type="image/webp"><img src="img/blog/reviews.png" alt="reviews"></picture>
+											<img src="img/blog/reviews.png" alt="reviews">
 										</div>
 										<span>17</span>
 									</div>
@@ -1207,7 +1200,7 @@
 				<div class="container">
 					<div class="map__wrapper">
 						<div class="map__img">
-							<picture><source srcset="img/map/map-icon.webp" type="image/webp"><img src="img/map/map-icon.png" alt="Location"></picture>
+							<img src="img/map/map-icon.png" alt="Location">
 						</div>
 						<div class="map__title">
 							<h2>Latest blog</h2>
@@ -1217,7 +1210,7 @@
 				</div>
 			</section>
 		</main>
-		<footer class="footer">
+		<footer class="footer" id="contact">
    <div class="container">
       <div class="footer__wrapper">
          <div class="footer__header">
@@ -1324,7 +1317,7 @@
                <h3 class="footer__blogs-title">blogs</h3>
                <div class="footer__article">
                   <div class="footer__article-img">
-                     <picture><source srcset="img/footer/blog1.webp" type="image/webp"><img src="img/footer/blog1.jpg" alt="Article"></picture>
+                     <img src="img/footer/blog1.jpg" alt="Article">
                   </div>
                   <div class="footer__article-link">
                      <a href="">
@@ -1337,7 +1330,7 @@
                </div>
                <div class="footer__article">
                   <div class="footer__article-img">
-                     <picture><source srcset="img/footer/blog2.webp" type="image/webp"><img src="img/footer/blog2.jpg" alt="Article"></picture>
+                     <img src="img/footer/blog2.jpg" alt="Article">
                   </div>
                   <div class="footer__article-link">
                      <a href="">
@@ -1350,7 +1343,7 @@
                </div>
                <div class="footer__article">
                   <div class="footer__article-img">
-                     <picture><source srcset="img/footer/blog3.webp" type="image/webp"><img src="img/footer/blog3.jpg" alt="Article"></picture>
+                     <img src="img/footer/blog3.jpg" alt="Article">
                   </div>
                   <div class="footer__article-link">
                      <a href="">
@@ -1368,31 +1361,31 @@
 
                <div class="footer__instagram-photos">
                   <a class="footer__instagram-img">
-                     <picture><source srcset="img/footer/instagram1.webp" type="image/webp"><img src="img/footer/instagram1.png" alt="Instagram"></picture>
+                     <img src="img/footer/instagram1.png" alt="Instagram">
                   </a>
                   <a class="footer__instagram-img">
-                     <picture><source srcset="img/footer/instagram2.webp" type="image/webp"><img src="img/footer/instagram2.png" alt="Instagram"></picture>
+                     <img src="img/footer/instagram2.png" alt="Instagram">
                   </a>
                   <a class="footer__instagram-img">
-                     <picture><source srcset="img/footer/instagram3.webp" type="image/webp"><img src="img/footer/instagram3.png" alt="Instagram"></picture>
+                     <img src="img/footer/instagram3.png" alt="Instagram">
                   </a>
                   <a class="footer__instagram-img">
-                     <picture><source srcset="img/footer/instagram4.webp" type="image/webp"><img src="img/footer/instagram4.png" alt="Instagram"></picture>
+                     <img src="img/footer/instagram4.png" alt="Instagram">
                   </a>
                   <a class="footer__instagram-img">
-                     <picture><source srcset="img/footer/instagram5.webp" type="image/webp"><img src="img/footer/instagram5.png" alt="Instagram"></picture>
+                     <img src="img/footer/instagram5.png" alt="Instagram">
                   </a>
                   <a class="footer__instagram-img">
-                     <picture><source srcset="img/footer/instagram6.webp" type="image/webp"><img src="img/footer/instagram6.png" alt="Instagram"></picture>
+                     <img src="img/footer/instagram6.png" alt="Instagram">
                   </a>
                   <a class="footer__instagram-img">
-                     <picture><source srcset="img/footer/instagram7.webp" type="image/webp"><img src="img/footer/instagram7.png" alt="Instagram"></picture>
+                     <img src="img/footer/instagram7.png" alt="Instagram">
                   </a>
                   <a class="footer__instagram-img">
-                     <picture><source srcset="img/footer/instagram8.webp" type="image/webp"><img src="img/footer/instagram8.png" alt="Instagram"></picture>
+                     <img src="img/footer/instagram8.png" alt="Instagram">
                   </a>
                   <a class="footer__instagram-img">
-                     <picture><source srcset="img/footer/instagram9.webp" type="image/webp"><img src="img/footer/instagram9.png" alt="Instagram"></picture>
+                     <img src="img/footer/instagram9.png" alt="Instagram">
                   </a>
                </div>
 
@@ -1410,8 +1403,8 @@
 </footer>
 	</div>
 
-	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230313193140"></script>
-	<script src="js/app.min.js?_v=20230313193140"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="js/app.min.js"></script>
 </body>
 
 </html>
