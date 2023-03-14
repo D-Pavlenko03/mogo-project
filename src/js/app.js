@@ -17,6 +17,11 @@ let interval = 4000;
 
 const faqs = document.querySelectorAll(".accordion");
 
+const stickyElements = document.querySelectorAll('.banner__navigation-line');
+const stickyTops = [];
+
+const scrollProgressElement = document.querySelector('#scroll-progress');
+
 smoothLinks.forEach(smoothLink => {
    smoothLink.addEventListener("click", function (e) {
       e.preventDefault();
@@ -167,3 +172,33 @@ const feedbacks = new Swiper('.feedbacks-swiper', {
       pageUpDown: true,
    },
 });
+
+stickyElements.forEach(element => {
+   stickyTops.push(element.offsetTop);
+});
+
+function fixStickyElements() {
+   stickyElements.forEach((element, index) => {
+   if (window.pageYOffset >= stickyTops[index]) {
+      element.classList.add('fixed');
+   } else {
+      element.classList.remove('fixed');
+   }
+   });
+}
+
+window.addEventListener('scroll', fixStickyElements);
+   
+function scrollProgress() { 
+   const totalheightOfWebPage = document.body.scrollHeight;
+   const currentDistanceFromTop = document.documentElement.scrollTop;
+
+   const windowHeight = document .documentElement.clientHeight;
+
+   const scrolledPercentage =
+      (currentDistanceFromTop / (totalheightOfWebPage - windowHeight)) * 100;
+   
+   scrollProgressElement.style.width = Math.round(scrolledPercentage) + "%"
+}
+
+document.addEventListener("scroll", scrollProgress);
